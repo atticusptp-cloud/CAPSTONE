@@ -42,7 +42,7 @@ The dataset consists of the following 28 features:
 | Column Name | Data Type | Description | Example Value |
 | :--- | :--- | :--- | :--- |
 | **Booking_ID** | String | Unique identifier assigned to each booking record. | `13117` |
-| **Hotel_ID** | Float | Identifier of the hotel associated with the booking. | `1`, `2` |
+| **Hotel_ID** | Float | Identifier of the hotel associated with the booking. | `1 - Resort Hotel`, `2 - City Hotel` |
 | **Market_Segment_ID** | String | Identifier of the booking market segment and distribution channel. | `1`, `2`, `23` |
 | **Customer_Type_ID** | String | Identifier of the customer classification, deposit type, and meal plan. | `1`, `2`, `23` |
 | **Reservation_ID** | String | Identifier of the reservation status. | `1`, `2`, `3`|
