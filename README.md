@@ -15,7 +15,6 @@ This repository contains a transactional dataset capturing retail sales performa
 
 It serves as an excellent resource for exploratory data analysis (EDA), sales performance forecasting, regional market analysis, and missing data imputation practice.
 
-<img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
 
 ## 📋 Dataset Overview
 
