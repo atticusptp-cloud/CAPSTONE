@@ -5,6 +5,7 @@
 # Hotel Booking Cancellation 📊
 
 <p align="center">
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/498567bb-27b0-4522-8b8b-3ac396eef551" />
 
 </p>
 
