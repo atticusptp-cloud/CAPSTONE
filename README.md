@@ -9,7 +9,7 @@
 
 </p>
 
-<h1 align="center">Hotel Booking Cancellation</h1>
+<h1 align="center">Hotel Bookings Cancellation</h1>
 
 This repository contains a transactional dataset capturing retail sales performance for consumer electronics products throughout the first half of **2026**. The data includes granular details on order parameters, product categories, geographic regions, salesperson mapping, and promotional discounts.
 
@@ -18,9 +18,9 @@ It serves as an excellent resource for exploratory data analysis (EDA), sales pe
 
 ## 📋 Dataset Overview
 
-* **File Name:** `product_sales_practice.csv`
-* **Time Horizon:** January 2026 – June 2026
-* **Target Category:** Electronics
+* **File Name:** `bookings.csv`, `Customer Types.csv`, `Hotels.csv`, `Market Segments.csv`, `Reservation Status.csv`
+* **Time Horizon:** July 2015 – August 2027
+* **Target Category:** Hotels Bookings Cancellation
 * **Key Entities:** Products, Sales Team, Regional Markets, Revenue Metrics
 
   Link to Jupyter Notebook in Google Colab:
