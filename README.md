@@ -5,7 +5,7 @@
 # Hotel Booking Cancellation 📊
 
 <p align="center">
- <img width="266" height="205" alt="image_1e16842e_edited" src="https://github.com/user-attachments/assets/699034ae-2410-4f06-ae9d-66dd5003594f" />
+
 </p>
 
 <h1 align="center">Hotel Booking Cancellation</h1>
@@ -52,22 +52,22 @@ The dataset consists of the following 28 features:
 | **arrival_date_month** | Float | The retail price per single unit of the product. | `997.|
 | **arrival_date_week_number** | Float | The retail price per single unit of the product. | `997.|
 | **arrival_date_day_of_month** | Float | The retail price per single unit of the product. | `997.|
-| **stays_in_weekend_nights** | Float | The retail price per single unit of the product. | `997.|
-| **stays_in_week_nights** | Float | The retail price per single unit of the product. | `997.|
-| **adults** | Float | The promotional deduction percentage applied (0.0 to 0.15). | `0.15` (equivalent to 15%) |
-| **babies** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-| **country** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-| **is_repeated_guest** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-| **previous_cancellations** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-| **previous_bookings_not_canceled** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-| **booking_changes** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-| **agent** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-| **children** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-| **children** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-| **children** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
-
-
-
+| **stays_in_weekend_nights** | Float | Number of weekend nights booked. | `997.|
+| **stays_in_week_nights** | Float | Number of weekday nights booked. | `997.|
+| **adults** | Float |Number of adult guests included in the booking. | `0.15` (equivalent to 15%) |
+| **babies** | Float | Number of babies included in the booking.| `6983.69` |
+| **country** | Float | Country of origin of the guest. | `6983.69` |
+| **is_repeated_guest** | Float | Indicates whether the guest has booked previously. | `6983.69` |
+| **previous_cancellations** | Float | Number of previous canceled bookings by the guest. | `6983.69` |
+| **previous_bookings_not_canceled** | Float | Number of previous completed bookings by the guest. | `6983.69` |
+| **booking_changes** | Float | Number of modifications made to the booking. | `6983.69` |
+| **agent** | Float | Travel agent identifier associated with the booking. | `6983.69` |
+| **company** | Float | Company identifier associated with the booking. | `6983.69` |
+| **days_in_waiting_list** | Float | Number of days the booking remained on a waiting list. | `6983.69` |
+| **adr** | Float | Average Daily Rate charged for the booking. | `6983.69` |
+| **required_car_parking_spaces** | Float | Number of parking spaces requested by the guest. | `6983.69` |
+| **total_of_special_requests** | Float | Number of special requests submitted by the guest. | `6983.69` |
+| **reservation_status_date** | Float | Date on which the reservation status was recorded. | `6983.69` |
 
 ## 🔍 Data Quality & Cleaning Notes
 
