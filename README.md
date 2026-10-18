@@ -54,7 +54,7 @@ The dataset consists of the following 28 features:
 | **arrival_date_day_of_month** | Float | Day of the month of guest arrival. | `997.|
 | **stays_in_weekend_nights** | Float | Number of weekend nights booked. | `997.|
 | **stays_in_week_nights** | Float | Number of weekday nights booked. | `997.|
-| **adults** | Float |Number of adult guests included in the booking. | `0.15` (equivalent to 15%) |
+| **adults** | Float |Number of adult guests included in the booking. | `0`, `2`, `50`|
 | **babies** | Float | Number of babies included in the booking.| `6983.69` |
 | **country** | Float | Country of origin of the guest. | `6983.69` |
 | **is_repeated_guest** | Float | Indicates whether the guest has booked previously. | `6983.69` |
