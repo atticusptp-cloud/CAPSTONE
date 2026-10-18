@@ -1,6 +1,6 @@
 # CAPSTONE PROJECT FOR NTUC LEARNING HUB PROJECT
-* ** Prepared by Atticus Poh**
-* ** Dataset used: 14.1 Hotel Bookings**
+* **Prepared by Atticus Poh**
+* **Dataset used: 14.1 Hotel Bookings**
   
 # Hotel Booking Cancellation 📊
 
