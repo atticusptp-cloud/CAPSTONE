@@ -41,16 +41,16 @@ The dataset consists of the following 28 features:
 
 | Column Name | Data Type | Description | Example Value |
 | :--- | :--- | :--- | :--- |
-| **Booking_ID** | String | Unique identifier assigned to each booking record. | `ORD078` |
-| **Hotel_ID** | Float | Identifier of the hotel associated with the booking. | `2026-04-09` |
-| **Market_Segment_ID** | String | Identifier of the booking market segment and distribution channel. | `Laptop`, `Mouse`, `Webcam` |
-| **Customer_Type_ID** | String | Identifier of the customer classification, deposit type, and meal plan. | `Electronics` |
-| **Reservation_ID** | String | Identifier of the reservation status. | `North`, `East`, `West`, `South` |
-| **is_canceled** | String | Indicates whether the booking was canceled. | `Alice`, `Bob`, `Charlie`, `Diana`, `Ethan` |
-| **lead_time** | Integer | Number of days between booking creation and arrival date. | `7.0` |
-| **arrival_date_year** | Float | Year of guest arrival. | `997.|
-| **arrival_date_month** | Float | Month of guest arrival. | `997.|
-| **arrival_date_week_number** | Float | Week number of guest arrival. | `997.|
+| **Booking_ID** | String | Unique identifier assigned to each booking record. | `13117` |
+| **Hotel_ID** | Float | Identifier of the hotel associated with the booking. | `1`, `2` |
+| **Market_Segment_ID** | String | Identifier of the booking market segment and distribution channel. | `1`, `2`, `23` |
+| **Customer_Type_ID** | String | Identifier of the customer classification, deposit type, and meal plan. | `1`, `2`, `23` |
+| **Reservation_ID** | String | Identifier of the reservation status. | `1`, `2`, `3`|
+| **is_canceled** | String | Indicates whether the booking was canceled. | `0`, `1` |
+| **lead_time** | Integer | Number of days between booking creation and arrival date. | `0`, `2`, `521` |
+| **arrival_date_year** | Float | Year of guest arrival. | `2015`, `2016`, `2017`|
+| **arrival_date_month** | Float | Month of guest arrival. | `April`, `August`, `November`|
+| **arrival_date_week_number** | Float | Week number of guest arrival. | `1`, `8`, `53`|
 | **arrival_date_day_of_month** | Float | Day of the month of guest arrival. | `997.|
 | **stays_in_weekend_nights** | Float | Number of weekend nights booked. | `997.|
 | **stays_in_week_nights** | Float | Number of weekday nights booked. | `997.|
