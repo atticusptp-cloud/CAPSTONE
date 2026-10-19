@@ -42,32 +42,32 @@ The dataset consists of the following 28 features:
 | Column Name | Data Type | Description | Example Value |
 | :--- | :--- | :--- | :--- |
 | **Booking_ID** | String | Unique identifier assigned to each booking record. | `13117` |
-| **Hotel_ID** | Float | Identifier of the hotel associated with the booking. | `1 - Resort Hotel`, `2 - City Hotel` |
+| **Hotel_ID** | String | Identifier of the hotel associated with the booking. | `1 - Resort Hotel`, `2 - City Hotel` |
 | **Market_Segment_ID** | String | Identifier of the booking market segment and distribution channel. | `1`, `2`, `23` |
 | **Customer_Type_ID** | String | Identifier of the customer classification, deposit type, and meal plan. | `1`, `2`, `23` |
 | **Reservation_ID** | String | Identifier of the reservation status. | `1`, `2`, `3`|
-| **is_canceled** | String | Indicates whether the booking was canceled. | `0`, `1` |
-| **lead_time** | Integer | Number of days between booking creation and arrival date. | `0`, `2`, `521` |
-| **arrival_date_year** | Float | Year of guest arrival. | `2015`, `2016`, `2017`|
-| **arrival_date_month** | Float | Month of guest arrival. | `April`, `August`, `November`|
-| **arrival_date_week_number** | Float | Week number of guest arrival. | `1`, `8`, `53`|
-| **arrival_date_day_of_month** | Float | Day of the month of guest arrival. | `997.|
-| **stays_in_weekend_nights** | Float | Number of weekend nights booked. | `997.|
-| **stays_in_week_nights** | Float | Number of weekday nights booked. | `997.|
-| **adults** | Float |Number of adult guests included in the booking. | `0`, `2`, `50`|
-| **babies** | Float | Number of babies included in the booking.| `6983.69` |
-| **country** | Float | Country of origin of the guest. | `6983.69` |
-| **is_repeated_guest** | Float | Indicates whether the guest has booked previously. | `6983.69` |
-| **previous_cancellations** | Float | Number of previous canceled bookings by the guest. | `6983.69` |
-| **previous_bookings_not_canceled** | Float | Number of previous completed bookings by the guest. | `6983.69` |
-| **booking_changes** | Float | Number of modifications made to the booking. | `6983.69` |
-| **agent** | Float | Travel agent identifier associated with the booking. | `6983.69` |
-| **company** | Float | Company identifier associated with the booking. | `6983.69` |
-| **days_in_waiting_list** | Float | Number of days the booking remained on a waiting list. | `6983.69` |
+| **is_canceled** | Integar | Indicates whether the booking was canceled. | `0`, `1` |
+| **lead_time** | String | Number of days between booking creation and arrival date. | `0`, `2`, `521` |
+| **arrival_date_year** | String | Year of guest arrival. | `2015`, `2016`, `2017`|
+| **arrival_date_month** | String | Month of guest arrival. | `April`, `August`, `November`|
+| **arrival_date_week_number** | String | Week number of guest arrival. | `1`, `8`, `53`|
+| **arrival_date_day_of_month** | String | Day of the month of guest arrival. | `997.|
+| **stays_in_weekend_nights** | Integar | Number of weekend nights booked. | `997.|
+| **stays_in_week_nights** | Integar | Number of weekday nights booked. | `997.|
+| **adults** | Integar |Number of adult guests included in the booking. | `0`, `2`, `50`|
+| **babies** | Integar | Number of babies included in the booking.| `6983.69` |
+| **country** | String | Country of origin of the guest. | `6983.69` |
+| **is_repeated_guest** | Integar | Indicates whether the guest has booked previously. | `6983.69` |
+| **previous_cancellations** | Integar | Number of previous canceled bookings by the guest. | `6983.69` |
+| **previous_bookings_not_canceled** | Integar | Number of previous completed bookings by the guest. | `6983.69` |
+| **booking_changes** | Integar | Number of modifications made to the booking. | `6983.69` |
+| **agent** | String | Travel agent identifier associated with the booking. | `6983.69` |
+| **company** | String | Company identifier associated with the booking. | `6983.69` |
+| **days_in_waiting_list** | String | Number of days the booking remained on a waiting list. | `6983.69` |
 | **adr** | Float | Average Daily Rate charged for the booking. | `6983.69` |
-| **required_car_parking_spaces** | Float | Number of parking spaces requested by the guest. | `6983.69` |
-| **total_of_special_requests** | Float | Number of special requests submitted by the guest. | `6983.69` |
-| **reservation_status_date** | Float | Date on which the reservation status was recorded. | `6983.69` |
+| **required_car_parking_spaces** | Integar | Number of parking spaces requested by the guest. | `6983.69` |
+| **total_of_special_requests** | Intergar | Number of special requests submitted by the guest. | `6983.69` |
+| **reservation_status_date** | String | Date on which the reservation status was recorded. | `6983.69` |
 
 ## 🔍 Data Quality & Cleaning Notes
 
