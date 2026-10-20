@@ -76,8 +76,10 @@ The dataset consists of the following 28 features:
 ## 🔍 Key Findings
 
 ## Headline numbers
-| **Metric** | Value |
-Bookings (after cleaning)	        118,561
+| Metric | Value |
+| :--- | :--- | :--- | :--- |
+
+| Bookings (after cleaning)	| 118,561 |
 Cancellation rate	                37.3%
 Average daily rate (ADR)	        102.48
 Realised revenue	                26.0M
