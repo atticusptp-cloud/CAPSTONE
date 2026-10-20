@@ -80,17 +80,11 @@ The dataset consists of the following 28 features:
 | :--- | :--- |
 | Bookings (after cleaning)	| 118,561 |
 | Cancellation rate | 37.3% |
-Average daily rate (ADR)	        102.48
-Realised revenue	                26.0M
-Revenue lost to cancellations	    16.7M (39% of booked value)
+| Average daily rate (ADR)	|        102.48 |
+| Realised revenue | 26.0M |
+|  Revenue lost to cancellations |	    16.7M (39% of booked value)
 
 
-If you are using this dataset for data cleaning projects, please note that it intentionally contains realistic real-world data anomalies:
-* **Missing Values (NaNs):** Features like `Region`, `Salesperson`, `Unit_Price`, `Discount`, and `Sales` contain scattered missing fields (e.g., missing revenue values or unattributed regional boundaries).
-* **Calculated Columns:** The `Sales` column follows the general formula:  
-  \[\text{Sales} = (\text{Quantity} \times \text{Unit\_Price}) \times (1 - \text{Discount})\]
-  This relationship can be exploited to programmatically restore missing metrics.
-* **Empty Rows:** The raw structure contains blank structural divider rows (`,,,,,,,,,`) that should be filtered out during preprocessing.
 
 ## 🛠️ Usage Example (Python & Pandas)
 
