@@ -73,7 +73,16 @@ The dataset consists of the following 28 features:
 | **total_of_special_requests** | Intergar | Number of special requests submitted by the guest. | `6983.69` |
 | **reservation_status_date** | String | Date on which the reservation status was recorded. | `6983.69` |
 
-## 🔍 Data Quality & Cleaning Notes
+## 🔍 Key Findings
+
+Headline numbers
+Metric	                          Value
+Bookings (after cleaning)	        118,561
+Cancellation rate	                37.3%
+Average daily rate (ADR)	        102.48
+Realised revenue	                26.0M
+Revenue lost to cancellations	    16.7M (39% of booked value)
+
 
 If you are using this dataset for data cleaning projects, please note that it intentionally contains realistic real-world data anomalies:
 * **Missing Values (NaNs):** Features like `Region`, `Salesperson`, `Unit_Price`, `Discount`, and `Sales` contain scattered missing fields (e.g., missing revenue values or unattributed regional boundaries).
