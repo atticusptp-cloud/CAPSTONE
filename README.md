@@ -77,7 +77,7 @@ The dataset consists of the following 28 features:
 
 ## Headline numbers
 | Metric | Value |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- |
 
 | Bookings (after cleaning)	| 118,561 |
 Cancellation rate	                37.3%
