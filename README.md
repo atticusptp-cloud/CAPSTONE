@@ -26,10 +26,9 @@ It serves as an excellent resource for exploratory data analysis (EDA), sales pe
   Link to Jupyter Notebook in Google Colab:
 [  https://colab.research.google.com/drive/1zdPR2ig9qFp6Q1gPrZvky3Ac7UITW3Mv?usp=sharing](https://colab.research.google.com/drive/1qR-WG3Cuy9BQYkelKnsSL8fwCqMvxfIl)
 
-Problem Statement
-More than a third of all bookings were cancelled. Cancellations leave rooms empty at short notice and cost revenue the
-hotels expected to earn. Management wants to know how big the problem is, which bookings are most at risk, which channels
-and guests are most reliable, and how room prices move with season and demand.
+## Problem Statement
+
+More than a third of all bookings were cancelled. Cancellations leave rooms empty at short notice and cost revenue the hotels expected to earn. Management wants to know how big the problem is, which bookings are most at risk, which channels and guests are most reliable, and how room prices move with seasonality and demand.
 
 
 ##    Research Objectives
