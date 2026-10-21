@@ -11,9 +11,7 @@
 
 <h1 align="center">Hotel Bookings Cancellation</h1>
 
-This repository contains a transactional dataset capturing the bookings received and bookings cancellation for 2 Hotels - a City Hotel & a Resort Hotel. The data includes granular details on order parameters, product categories, geographic regions, salesperson mapping, and promotional discounts.
-
-It serves as an excellent resource for exploratory data analysis (EDA), sales performance forecasting, regional market analysis, and missing data imputation practice.
+This repository contains a transactional dataset capturing the bookings received and bookings cancellation for 2 Hotels - a City Hotel & a Resort Hotel. An end-to-end data analytics project on 119,390 hotel bookings (City Hotel and Resort Hotel, July 2015 – August 2017). It measures how much cancellations cost, finds the bookings, channels and guests most likely to cancel, analyses pricing and demand, and builds a Multiple Linear Regression model to predict the room price (ADR).
 
 
 ## 📋 Dataset Overview
@@ -28,7 +26,7 @@ It serves as an excellent resource for exploratory data analysis (EDA), sales pe
 
 ## Problem Statement
 
-More than a third of all bookings were cancelled. Cancellations leave rooms empty at short notice and cost revenue the hotels expected to earn. Management wants to know how big the problem is, which bookings are most at risk, which channels and guests are most reliable, and how room prices move with seasonality and demand.
+More than a third of all bookings were cancelled. Cancellations leave rooms empty at short notice and cost revenue on the hotels expected to earn. Management wants to know the severity of the issue, which bookings are most at risk, which channels and guests are most reliable, and how room prices move with seasonality and demand.
 
 
 ##    Research Objectives
@@ -86,19 +84,109 @@ The dataset consists of the following 28 features:
 
 
 
-## 🛠️ Usage Example (Python & Pandas)
+Insights by objective
 
-Get started analyzing this dataset quickly using Python:
+1. Performance
 
-```python
-import pandas as pd
+The City Hotel cancels 41.9% of bookings and the Resort 28.0%. The City Hotel accounts for 10.9M of the 16.7M lost.
+Comparing January – August, 2017 had 11% more bookings and a 15% higher ADR than 2016, but cancellations also rose, from 34.9% to 38.8%.
 
-# Load the dataset and drop completely empty structural lines
-df = pd.read_csv('sales_data.csv').dropna(how='all')
+2. Cancellation factors
 
-# Convert date column to datetime object
-df['Date'] = pd.to_datetime(df['Date'])
+Cancellation rises steadily with lead time, from 9.7% for bookings made 0 – 7 days ahead to 67.7% for 365+ days.
+Non-Refund bookings cancel 99.4% of the time. The investigation found that 97% come from Portugal, 97% come through Groups or Offline travel agents, and 93% are duplicate rows. This points to agency block bookings being released, not real guests cancelling.
+Guests with special requests or booking changes cancel much less (14 – 22% vs 41 – 48%).
+A simple rule-based risk score (if / elif) separates the bookings well:
+Risk level	Share of bookings	Actual cancellation rate
+Low	19.1%	7.3%
+Medium	53.1%	29.5%
+High	27.8%	72.6%
 
-# Quick view of total sales revenue by product
-revenue_by_product = df.groupby('Product')['Sales'].sum().sort_values(ascending=False)
-print("Revenue by Product:\n", revenue_by_product)
+3. Segments and channels
+
+Online TA brings 53% of realised revenue (ADR ~118) but cancels 36.9% of the time.
+Direct is the best segment: ADR ~117 with only 15.5% cancellation. Groups cancel 61.2% of the time.
+
+4. Guests
+
+Repeat guests cancel 15.7% vs 37.9% for first-time guests, but they make up only ~3% of bookings.
+Transient guests are 75% of bookings and cancel 41%. Bookings from Portugal cancel 57.3%.
+
+5. Pricing and demand
+
+The Resort's ADR rises from ~50 in January to ~183 in August, a seasonal premium.
+City Hotel prices follow monthly demand closely (r = 0.80); the Resort's follow it only weakly (r = 0.29).
+Price on its own barely predicts cancellation (r = −0.03 City, 0.10 Resort).
+🤖 Predictive Model: Multiple Linear Regression (ADR)
+
+The data is bookings that were actually stayed, with duplicates removed (60,795 rows), split 75/25 into training and test sets with random_state=42. Text columns were converted to numbers with .map() dictionaries.
+
+Model	R²	RMSE
+A. Simple LR (July/August only)	0.170	45.15
+B. Multiple LR (both hotels)	0.498	35.12
+C. Multiple LR (City Hotel only)	0.462	29.19
+C. Multiple LR (Resort Hotel only)	0.718	31.54
+
+Main price drivers (model B coefficients):
+
+Feature	Effect on ADR
+Half or full board	+33
+Each child	+27
+Summer arrival	+23
+Online TA / Direct booking	+22
+Each adult	+19
+Each later year	+14.5
+💡 Recommendations
+Audit Non-Refund and agency block bookings. Check deposits are collected, and record released blocks separately from guest cancellations.
+Tighten group contracts with release dates, attrition clauses and staged deposits.
+Apply the risk rules to every new booking. Ask High-risk bookings for a deposit and send reminders.
+Use controlled overbooking at the City Hotel in its peak months (April – June).
+Re-confirm long lead-time bookings (90+ days ahead).
+Grow direct and repeat business with loyalty perks and a best-rate guarantee.
+Encourage special requests at booking. Engaged guests rarely cancel.
+Pricing: keep the Resort's summer premium, use demand-based pricing at the City Hotel, and use the model to check quoted rates.
+🗂️ Repository Structure
+├── Hotel_Booking_Analysis.ipynb     # Main notebook (all outputs saved)
+├── Hotel_Booking_Analysis.html      # Notebook as a web page
+├── Hotel_Booking_Dashboard.html     # Interactive plotly dashboard
+├── requirements.txt
+├── README.md
+└── data/
+    ├── raw/
+    │   ├── Bookings.csv             # Fact table (119,390 rows)
+    │   ├── Hotels.csv
+    │   ├── Market_Segments.csv
+    │   ├── Customer_Types.csv
+    │   ├── Reservation_Status.csv
+    │   └── Data_Dictionary.docx
+    └── processed/
+        ├── hotel_bookings_clean.csv # Created by the notebook
+        └── model_results.csv        # Created by the notebook
+Data model
+
+Bookings is the fact table. It joins to four lookup tables with left joins:
+
+Hotels ──(Hotel_ID)──┐
+Market_Segments ─────┼── Bookings ──┬── Customer_Types
+                     │              └── Reservation_Status
+🧹 Data Preparation Summary
+Issue	Rows	Action
+Missing children / country	4 / 488	Filled with 0 / "Unknown"
+Missing agent / company	16,340 / 112,593	Filled with 0, plus has_agent / has_company flags
+0 guests or 0 nights	180 / 715	Removed
+Negative ADR, ADR = 5,400	2	Removed (checked with z-scores)
+Undefined market segment	2	Removed
+Duplicate rows (block bookings)	~33,000	Kept for analysis, removed for modelling
+
+In total, 829 rows (0.69%) were removed.
+
+▶️ How to Run
+bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+pip install -r requirements.txt
+jupyter notebook Hotel_Booking_Analysis.ipynb
+
+Then run Kernel → Restart & Run All. It takes under a minute. Keep the data/ folder next to the notebook.
+
+Libraries used: pandas, numpy, matplotlib, seaborn, plotly, scipy, scikit-learn
