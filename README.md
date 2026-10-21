@@ -84,14 +84,14 @@ The dataset consists of the following 28 features:
 
 
 
-Insights by objective
+## Insights by objective
 
-1. Performance
+## 1. Performance
 
 The City Hotel cancels 41.9% of bookings and the Resort 28.0%. The City Hotel accounts for 10.9M of the 16.7M lost.
 Comparing January – August, 2017 had 11% more bookings and a 15% higher ADR than 2016, but cancellations also rose, from 34.9% to 38.8%.
 
-2. Cancellation factors
+## 2. Cancellation factors
 
 Cancellation rises steadily with lead time, from 9.7% for bookings made 0 – 7 days ahead to 67.7% for 365+ days.
 Non-Refund bookings cancel 99.4% of the time. The investigation found that 97% come from Portugal, 97% come through Groups or Offline travel agents, and 93% are duplicate rows. This points to agency block bookings being released, not real guests cancelling.
@@ -102,17 +102,17 @@ Low	19.1%	7.3%
 Medium	53.1%	29.5%
 High	27.8%	72.6%
 
-3. Segments and channels
+## 3. Segments and channels
 
 Online TA brings 53% of realised revenue (ADR ~118) but cancels 36.9% of the time.
 Direct is the best segment: ADR ~117 with only 15.5% cancellation. Groups cancel 61.2% of the time.
 
-4. Guests
+## 4. Guests
 
 Repeat guests cancel 15.7% vs 37.9% for first-time guests, but they make up only ~3% of bookings.
 Transient guests are 75% of bookings and cancel 41%. Bookings from Portugal cancel 57.3%.
 
-5. Pricing and demand
+## 5. Pricing and demand
 
 The Resort's ADR rises from ~50 in January to ~183 in August, a seasonal premium.
 City Hotel prices follow monthly demand closely (r = 0.80); the Resort's follow it only weakly (r = 0.29).
