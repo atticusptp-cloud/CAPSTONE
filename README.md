@@ -180,9 +180,10 @@ Duplicate rows (block bookings)	~33,000	Kept for analysis, removed for modelling
 
 In total, 829 rows (0.69%) were removed.
 
-## | Recommendation |	Evidence |
-| 1	Audit Non-Refund / agency block bookings. Check that deposits are really collected, and record released blocks separately from guest cancellations. |	99% "cancellation" on Non-Refund bookings; 97% from Portugal and Groups/Offline TA; 93% duplicate rows |
-2	Tighten group and tour-operator contracts: release dates, attrition clauses, staged deposits.	The Groups segment cancels 61% and loses 60% of its booked value
+| Recommendation |	Evidence |
+| :--- | :--- |
+| 1	Audit Non-Refund  agency block bookings. Check that deposits are really collected, and record released blocks separately from guest cancellations. |	99% "cancellation" on Non-Refund bookings; 97% from Portugal and Groups/Offline TA; 93% duplicate rows |
+| 2	Tighten group and tour-operator contracts: release dates, attrition clauses, staged deposits. |	The Groups segment cancels 61% and loses 60% of its booked value |
 3	Use the risk rules on every new booking. For High risk, ask for a deposit and send reminders. For Low risk, change nothing.	High risk cancels ~73%, Low risk ~7%
 4	Controlled overbooking at the City Hotel in its peak months.	City Hotel cancels 42%, ~45% in April – June
 5	Lead-time policy: re-confirm bookings made 90+ days ahead.	Cancellation rises from 10% (0 – 7 days) to 68% (365+ days)
