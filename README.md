@@ -184,12 +184,12 @@ In total, 829 rows (0.69%) were removed.
 | :--- | :--- |
 | 1	Audit Non-Refund  agency block bookings. Check that deposits are really collected, and record released blocks separately from guest cancellations. |	99% "cancellation" on Non-Refund bookings; 97% from Portugal and Groups/Offline TA; 93% duplicate rows |
 | 2	Tighten group and tour-operator contracts: release dates, attrition clauses, staged deposits. |	The Groups segment cancels 61% and loses 60% of its booked value |
-3	Use the risk rules on every new booking. For High risk, ask for a deposit and send reminders. For Low risk, change nothing.	High risk cancels ~73%, Low risk ~7%
-4	Controlled overbooking at the City Hotel in its peak months.	City Hotel cancels 42%, ~45% in April – June
-5	Lead-time policy: re-confirm bookings made 90+ days ahead.	Cancellation rises from 10% (0 – 7 days) to 68% (365+ days)
-6	Grow direct and repeat business with loyalty perks and a best-rate guarantee on the hotel website.	Direct segment ~15% and repeat guests ~16% cancellation, vs 37% overall
-7	Encourage engagement at booking: ask guests for special requests and preferences.	0 requests = 48% cancel vs ≤ 22% with 1+ requests
-8	Pricing: keep the Resort summer premium, use demand-based pricing at the City Hotel, and use the regression model to check quoted rates.	Resort ADR ×3.7 from January to August; City ADR follows demand; R² up to ~0.7
+| 3	Use the risk rules on every new booking. For High risk, ask for a deposit and send reminders. | For Low risk, change nothing.	High risk cancels ~73%, Low risk ~7%
+| 4	Controlled overbooking at the City Hotel in its peak months. |	City Hotel cancels 42%, ~45% in April – June |
+| 5	Lead-time policy: re-confirm bookings made 90+ days ahead. |	Cancellation rises from 10% (0 – 7 days) to 68% (365+ days) |
+| 6	Grow direct and repeat business with loyalty perks and a best-rate guarantee on the hotel website. |	Direct segment ~15% and repeat guests ~16% cancellation, vs 37% overall |
+| 7	Encourage engagement at booking: ask guests for special requests and preferences. |	0 requests = 48% cancel vs ≤ 22% with 1+ requests |
+| 8	Pricing: keep the Resort summer premium, use demand-based pricing at the City Hotel, and use the regression model to check quoted rates. |	Resort ADR ×3.7 from January to August; City ADR follows demand; R² up to ~0.7 |
 
 ▶️ How to Run
 bash
