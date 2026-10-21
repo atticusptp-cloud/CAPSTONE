@@ -101,6 +101,8 @@ Risk level	Share of bookings	Actual cancellation rate
 Low	19.1%	7.3%
 Medium	53.1%	29.5%
 High	27.8%	72.6%
+<img width="984" height="496" alt="image" src="https://github.com/user-attachments/assets/8bb3f8c1-3af7-4683-8bca-f7457d27da66" />
+<img width="988" height="492" alt="image" src="https://github.com/user-attachments/assets/8842c679-8f39-4ad6-8bc2-bff1328e2e39" />
 
 ## 3. Segments and channels
 
