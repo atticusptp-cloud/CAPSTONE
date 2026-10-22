@@ -22,7 +22,8 @@ This repository contains a transactional dataset capturing the bookings received
 * **Key Entities:** Market Segment, Customer Type, Country, ADR, Cancellation 
 
   Link to Jupyter Notebook in Google Colab:
-[  https://colab.research.google.com/drive/1zdPR2ig9qFp6Q1gPrZvky3Ac7UITW3Mv?usp=sharing](https://colab.research.google.com/drive/1qR-WG3Cuy9BQYkelKnsSL8fwCqMvxfIl)
+https://raw.githubusercontent.com/atticusptp-cloud/CAPSTONE/refs/heads/main/capstone_analysis.ipynb
+
 
 ## Problem Statement
 
