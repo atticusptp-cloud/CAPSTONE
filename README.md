@@ -114,12 +114,14 @@ High	27.8%	72.6%
 
 Online TA brings 53% of realised revenue (ADR ~118) but cancels 36.9% of the time.
 Direct is the best segment: ADR ~117 with only 15.5% cancellation. Groups cancel 61.2% of the time.
+<img width="1310" height="738" alt="image" src="https://github.com/user-attachments/assets/dae2b7be-86d5-43d5-a974-e0a845e4f1c6" />
 
 ## 4. Guests
 
 Repeat guests cancel 15.7% vs 37.9% for first-time guests, but they make up only ~3% of bookings.
 Transient guests are 75% of bookings and cancel 41%. Bookings from Portugal cancel 57.3%.
 <img width="1310" height="740" alt="image" src="https://github.com/user-attachments/assets/dca8f197-82d0-4687-a1cc-78609aec0953" />
+<img width="1314" height="740" alt="image" src="https://github.com/user-attachments/assets/8de86ff9-aaf5-470a-8c0e-acc9c889361b" />
 
 ## 5. Pricing and demand
 
