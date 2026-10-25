@@ -116,6 +116,7 @@ Direct is the best segment: ADR ~117 with only 15.5% cancellation. Groups cancel
 
 Repeat guests cancel 15.7% vs 37.9% for first-time guests, but they make up only ~3% of bookings.
 Transient guests are 75% of bookings and cancel 41%. Bookings from Portugal cancel 57.3%.
+<img width="1310" height="740" alt="image" src="https://github.com/user-attachments/assets/dca8f197-82d0-4687-a1cc-78609aec0953" />
 
 ## 5. Pricing and demand
 
