@@ -128,6 +128,11 @@ Transient guests are 75% of bookings and cancel 41%. Bookings from Portugal canc
 The Resort's ADR rises from ~50 in January to ~183 in August, a seasonal premium.
 City Hotel prices follow monthly demand closely (r = 0.80); the Resort's follow it only weakly (r = 0.29).
 Price on its own barely predicts cancellation (r = −0.03 City, 0.10 Resort).
+
+<img width="1314" height="746" alt="image" src="https://github.com/user-attachments/assets/e0f10f4a-bdf5-429a-81e2-3f31c1a911af" />
+
+
+
 🤖 Predictive Model: Multiple Linear Regression (ADR)
 
 The data is bookings that were actually stayed, with duplicates removed (60,795 rows), split 75/25 into training and test sets with random_state=42. Text columns were converted to numbers with .map() dictionaries.
