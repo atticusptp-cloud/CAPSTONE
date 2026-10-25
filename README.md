@@ -91,6 +91,7 @@ The dataset consists of the following 28 features:
 
 The City Hotel cancels 41.9% of bookings and the Resort 28.0%. The City Hotel accounts for 10.9M of the 16.7M lost.
 Comparing January – August, 2017 had 11% more bookings and a 15% higher ADR than 2016, but cancellations also rose, from 34.9% to 38.8%.
+<img width="1314" height="752" alt="image" src="https://github.com/user-attachments/assets/2343f72b-44d4-47ad-89f7-b620e0ee02c1" />
 
 ## 2. Cancellation factors
 
@@ -105,6 +106,8 @@ High	27.8%	72.6%
 <img width="984" height="496" alt="image" src="https://github.com/user-attachments/assets/8bb3f8c1-3af7-4683-8bca-f7457d27da66" />
 <img width="988" height="492" alt="image" src="https://github.com/user-attachments/assets/8842c679-8f39-4ad6-8bc2-bff1328e2e39" />
 <img width="1094" height="492" alt="image" src="https://github.com/user-attachments/assets/ba8baf9e-28ac-4654-8e06-3e04f21cd17a" />
+<img width="1316" height="644" alt="image" src="https://github.com/user-attachments/assets/78e97a28-0f5c-4471-9fd5-d1769302c313" />
+<img width="1308" height="740" alt="image" src="https://github.com/user-attachments/assets/8e929846-b921-4fbc-9e93-55fb21ce057a" />
 
 
 ## 3. Segments and channels
