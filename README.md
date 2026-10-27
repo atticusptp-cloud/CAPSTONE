@@ -71,10 +71,8 @@ The dataset consists of the following 28 features:
 | **required_car_parking_spaces** | Integar | Number of parking spaces requested by the guest. | `0`, `3`, `8` |
 | **total_of_special_requests** | Intergar | Number of special requests submitted by the guest. | `2`, `3`, `5` |
 | **reservation_status_date** | String | Date on which the reservation status was recorded. | `7/1/2015`, `1/11/2016`, `1/13/2017` |
-<img width="137" height="39" alt="image" src="https://github.com/user-attachments/assets/f7083370-1be0-4970-b011-ce29cf5c0468" />
 
-<img width="137" height="39" alt="image" src="https://github.com/user-attachments/assets/ea44a6bc-f2f4-43ac-848d-a091f74bd044" />
- |
+
 
 ## 🔍 Key Findings
 
