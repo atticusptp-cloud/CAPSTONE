@@ -58,19 +58,23 @@ The dataset consists of the following 28 features:
 | **stays_in_weekend_nights** | Integar | Number of weekend nights booked. | `997.|
 | **stays_in_week_nights** | Integar | Number of weekday nights booked. | `997.|
 | **adults** | Integar |Number of adult guests included in the booking. | `0`, `2`, `50`|
-| **babies** | Integar | Number of babies included in the booking.| `6983.69` |
-| **country** | String | Country of origin of the guest. | `6983.69` |
-| **is_repeated_guest** | Integar | Indicates whether the guest has booked previously. | `6983.69` |
-| **previous_cancellations** | Integar | Number of previous canceled bookings by the guest. | `6983.69` |
-| **previous_bookings_not_canceled** | Integar | Number of previous completed bookings by the guest. | `6983.69` |
-| **booking_changes** | Integar | Number of modifications made to the booking. | `6983.69` |
-| **agent** | String | Travel agent identifier associated with the booking. | `6983.69` |
-| **company** | String | Company identifier associated with the booking. | `6983.69` |
-| **days_in_waiting_list** | String | Number of days the booking remained on a waiting list. | `6983.69` |
-| **adr** | Float | Average Daily Rate charged for the booking. | `6983.69` |
-| **required_car_parking_spaces** | Integar | Number of parking spaces requested by the guest. | `6983.69` |
-| **total_of_special_requests** | Intergar | Number of special requests submitted by the guest. | `6983.69` |
-| **reservation_status_date** | String | Date on which the reservation status was recorded. | `6983.69` |
+| **babies** | Integar | Number of babies included in the booking.| `1`,`2`,`10` |
+| **country** | String | Country of origin of the guest. | `USA`, `PRT`, `GBR` |
+| **is_repeated_guest** | BOOLEAN | Indicates whether the guest has booked previously. | `0`, `1` |
+| **previous_cancellations** | Integar | Number of previous canceled bookings by the guest. | `1`, `4`, `21` |
+| **previous_bookings_not_canceled** | Integar | Number of previous completed bookings by the guest. | `0`, `9`, `12` |
+| **booking_changes** | Integar | Number of modifications made to the booking. | `0` ,`7`, `11`|
+| **agent** | String | Travel agent identifier associated with the booking. | `1`, `240`, `304` |
+| **company** | String | Company identifier associated with the booking. | `31`, `254`, `340` |
+| **days_in_waiting_list** | String | Number of days the booking remained on a waiting list. | `1` , `12`, `277`|
+| **adr** | Float | Average Daily Rate charged for the booking. | `1` , `1.29`, `107.42` |
+| **required_car_parking_spaces** | Integar | Number of parking spaces requested by the guest. | `0`, `3`, `8` |
+| **total_of_special_requests** | Intergar | Number of special requests submitted by the guest. | `2`, `3`, `5` |
+| **reservation_status_date** | String | Date on which the reservation status was recorded. | `7/1/2015`, `1/11/2016`, `1/13/2017` |
+<img width="137" height="39" alt="image" src="https://github.com/user-attachments/assets/f7083370-1be0-4970-b011-ce29cf5c0468" />
+
+<img width="137" height="39" alt="image" src="https://github.com/user-attachments/assets/ea44a6bc-f2f4-43ac-848d-a091f74bd044" />
+ |
 
 ## 🔍 Key Findings
 
