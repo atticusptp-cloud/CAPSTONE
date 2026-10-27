@@ -210,13 +210,3 @@ In total, 829 rows (0.69%) were removed.
 | 7	Encourage engagement at booking: ask guests for special requests and preferences. |	0 requests = 48% cancel vs ≤ 22% with 1+ requests |
 | 8	Pricing: keep the Resort summer premium, use demand-based pricing at the City Hotel, and use the regression model to check quoted rates. |	Resort ADR ×3.7 from January to August; City ADR follows demand; R² up to ~0.7 |
 
-▶️ How to Run
-bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-pip install -r requirements.txt
-jupyter notebook Hotel_Booking_Analysis.ipynb
-
-Then run Kernel → Restart & Run All. It takes under a minute. Keep the data/ folder next to the notebook.
-
-Libraries used: pandas, numpy, matplotlib, seaborn, plotly, scipy, scikit-learn
