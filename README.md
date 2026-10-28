@@ -1,9 +1,9 @@
-# CAPSTONE PROJECT FOR NTUC LEARNING HUB PROJECT
+ 
+# Hotel Booking Cancellation 📊 ( CAPSTONE PROJECT )
+
 * **Prepared by Atticus Poh**
 * **Dataset used: 14.1 Hotel Bookings**
   
-# Hotel Booking Cancellation 📊
-
 <p align="center">
 <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/498567bb-27b0-4522-8b8b-3ac396eef551" />
 
