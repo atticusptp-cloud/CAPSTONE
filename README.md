@@ -1,5 +1,5 @@
  
-# Hotel Booking Cancellation 📊 ( CAPSTONE PROJECT )
+<h1 align="center"> # Hotel Booking Cancellation 📊 ( CAPSTONE PROJECT ) </h1>
 
 * **Prepared by Atticus Poh**
 * **Dataset used: 14.1 Hotel Bookings**
@@ -8,8 +8,6 @@
 <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/498567bb-27b0-4522-8b8b-3ac396eef551" />
 
 </p>
-
-<h1 align="center">Hotel Bookings Cancellation</h1>
 
 This repository contains a transactional dataset capturing the bookings received and bookings cancellation for 2 Hotels - a City Hotel & a Resort Hotel. An end-to-end data analytics project on 119,390 hotel bookings (City Hotel and Resort Hotel, July 2015 – August 2017). It measures how much cancellations cost, finds the bookings, channels and guests most likely to cancel, analyses pricing and demand, and builds a Multiple Linear Regression model to predict the room price (ADR).
 
