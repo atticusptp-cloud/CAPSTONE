@@ -167,18 +167,6 @@ The data is bookings that were actually stayed, with duplicates removed (60,795 
 | Each adult |	+19 |
 | Each later year	| +14.5 |
 
-
-| 💡 Recommendations |
-| :--- |
-| a. Audit Non-Refund and agency block bookings. Check deposits are collected, and record released blocks separately from guest cancellations. |
-| b.Tighten group contracts with release dates, attrition clauses and staged deposits.|
-| c. Apply the risk rules to every new booking. Ask High-risk bookings for a deposit and send reminders. |
-| d. Use controlled overbooking at the City Hotel in its peak months (April – June). |
-| e. Re-confirm long lead-time bookings (90+ days ahead).|
-| f. Grow direct and repeat business with loyalty perks and a best-rate guarantee.|
-| g. Encourage special requests at booking. Engaged guests rarely cancel. |
-| h. Pricing: keep the Resort's summer premium, use demand-based pricing at the City Hotel, and use the model to check quoted rates. |
-
 ## Data model
 
 Bookings is the fact table. It joins to four lookup tables with left joins:
