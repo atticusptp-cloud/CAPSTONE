@@ -1,5 +1,5 @@
  
-<h1 align="center"> # Hotel Booking Cancellation 📊 ( CAPSTONE PROJECT ) </h1>
+<h1 align="center"> Hotel Booking Cancellation 📊 ( CAPSTONE PROJECT ) </h1>
 
 * **Prepared by Atticus Poh**
 * **Dataset used: 14.1 Hotel Bookings**
