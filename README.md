@@ -189,14 +189,15 @@ Bookings is the fact table. It joins to four lookup tables with left joins:
 Hotels ──(Hotel_ID)──┐
 Market_Segments ─────┼── Bookings ──┬── Customer_Types
                      │              └── Reservation_Status
-🧹 Data Preparation Summary
-Issue	Rows	Action
-Missing children / country	4 / 488	Filled with 0 / "Unknown"
-Missing agent / company	16,340 / 112,593	Filled with 0, plus has_agent / has_company flags
-0 guests or 0 nights	180 / 715	Removed
-Negative ADR, ADR = 5,400	2	Removed (checked with z-scores)
-Undefined market segment	2	Removed
-Duplicate rows (block bookings)	~33,000	Kept for analysis, removed for modelling
+|🧹 Data Preparation Summary |
+| Issue |	Rows | Action |
+| :--- | :--- | :--- |
+| Missing children / country |	4 / 488 |	Filled with 0 / "Unknown" |
+| Missing agent / company |	16,340 / 112,593 | Filled with 0, plus has_agent / has_company flags |
+| 0 guests or 0 nights |	180 / 715 |	Removed |
+| Negative ADR, ADR = 5,400 |	2	|  Removed (checked with z-scores) |
+| Undefined market segment |	2	| Removed |
+| Duplicate rows (block bookings)	| ~33,000 |	Kept for analysis, removed for modelling |
 
 In total, 829 rows (0.69%) were removed.
 
