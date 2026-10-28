@@ -104,9 +104,9 @@ Guests with special requests or booking changes cancel much less (14 – 22% vs 
 A simple rule-based risk score (if / elif) separates the bookings well:
 | Risk level | Share of bookings |	Actual cancellation rate |
 | :--- | :--- | :--- |
-|Low |	19.1%	7.3%
-Medium	53.1%	29.5%
-High	27.8%	72.6%
+|Low |	19.1% | 7.3% |
+| Medium |	53.1% |	29.5% |
+| High |	27.8% |	72.6% |
 <img width="984" height="496" alt="image" src="https://github.com/user-attachments/assets/8bb3f8c1-3af7-4683-8bca-f7457d27da66" />
 <img width="988" height="492" alt="image" src="https://github.com/user-attachments/assets/8842c679-8f39-4ad6-8bc2-bff1328e2e39" />
 <img width="1094" height="492" alt="image" src="https://github.com/user-attachments/assets/ba8baf9e-28ac-4654-8e06-3e04f21cd17a" />
