@@ -83,7 +83,7 @@ The dataset consists of the following 28 features:
 | Cancellation rate | 37.3% |
 | Average daily rate (ADR)	|        102.48 |
 | Realised revenue | 26.0M |
-|  Revenue lost to cancellations |	    16.7M (39% of booked value)
+|  Revenue lost to cancellations |	    16.7M (39% of booked value)|
 
 
 
@@ -102,8 +102,9 @@ Cancellation rises steadily with lead time, from 9.7% for bookings made 0 – 7 
 Non-Refund bookings cancel 99.4% of the time. The investigation found that 97% come from Portugal, 97% come through Groups or Offline travel agents, and 93% are duplicate rows. This points to agency block bookings being released, not real guests cancelling.
 Guests with special requests or booking changes cancel much less (14 – 22% vs 41 – 48%).
 A simple rule-based risk score (if / elif) separates the bookings well:
-Risk level	Share of bookings	Actual cancellation rate
-Low	19.1%	7.3%
+| Risk level | Share of bookings |	Actual cancellation rate |
+| :--- | :--- | :--- |
+|Low |	19.1%	7.3%
 Medium	53.1%	29.5%
 High	27.8%	72.6%
 <img width="984" height="496" alt="image" src="https://github.com/user-attachments/assets/8bb3f8c1-3af7-4683-8bca-f7457d27da66" />
