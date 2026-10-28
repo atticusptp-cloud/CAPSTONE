@@ -189,7 +189,8 @@ Bookings is the fact table. It joins to four lookup tables with left joins:
 Hotels ──(Hotel_ID)──┐
 Market_Segments ─────┼── Bookings ──┬── Customer_Types
                      │              └── Reservation_Status
-|🧹 Data Preparation Summary |
+                    
+🧹 Data Preparation Summary 
 | Issue |	Rows | Action |
 | :--- | :--- | :--- |
 | Missing children / country |	4 / 488 |	Filled with 0 / "Unknown" |
