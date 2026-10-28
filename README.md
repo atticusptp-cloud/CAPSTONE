@@ -173,7 +173,7 @@ The data is bookings that were actually stayed, with duplicates removed (60,795 
 | g. Encourage special requests at booking. Engaged guests rarely cancel. |
 | h. Pricing: keep the Resort's summer premium, use demand-based pricing at the City Hotel, and use the model to check quoted rates. |
 
-Data model
+## Data model
 
 Bookings is the fact table. It joins to four lookup tables with left joins:
 
@@ -190,7 +190,7 @@ Bookings is the fact table. It joins to four lookup tables with left joins:
 | Undefined market segment |	2	| Removed |
 | Duplicate rows (block bookings)	| ~33,000 |	Kept for analysis, removed for modelling |
 
-In total, 829 rows (0.69%) were removed.
+## In total, 829 rows (0.69%) were removed.
 
 | Recommendation |	Evidence |
 | :--- | :--- |
