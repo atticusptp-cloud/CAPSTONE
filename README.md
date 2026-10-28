@@ -137,25 +137,31 @@ Price on its own barely predicts cancellation (r = −0.03 City, 0.10 Resort).
 
 
 
+
+
 🤖 Predictive Model: Multiple Linear Regression (ADR)
 
 The data is bookings that were actually stayed, with duplicates removed (60,795 rows), split 75/25 into training and test sets with random_state=42. Text columns were converted to numbers with .map() dictionaries.
 
-Model	R²	RMSE
-A. Simple LR (July/August only)	0.170	45.15
-B. Multiple LR (both hotels)	0.498	35.12
-C. Multiple LR (City Hotel only)	0.462	29.19
-C. Multiple LR (Resort Hotel only)	0.718	31.54
+| Model |	R² |	RMSE |
+| :--- | :--- | :--- |
+| A. Simple LR (July/August only) |	0.170 |	45.15 |
+| B. Multiple LR (both hotels)	| 0.498 |	35.12 |
+| C1. Multiple LR (City Hotel only)	 | 0.462	 |29.19 |
+| C2. Multiple LR (Resort Hotel only)	| 0.718 |	31.54 |
 
 Main price drivers (model B coefficients):
 
-Feature	Effect on ADR
-Half or full board	+33
-Each child	+27
-Summer arrival	+23
-Online TA / Direct booking	+22
-Each adult	+19
-Each later year	+14.5
+| Feature |	Effect on ADR |
+| :--- | :--- |
+| Half or full board |	+33 |
+| Each child |	+27 |
+| Summer arrival |	+23 |
+| Online TA / Direct booking |	+22 |
+| Each adult |	+19 |
+| Each later year	| +14.5 |
+
+
 💡 Recommendations
 Audit Non-Refund and agency block bookings. Check deposits are collected, and record released blocks separately from guest cancellations.
 Tighten group contracts with release dates, attrition clauses and staged deposits.
