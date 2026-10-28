@@ -139,7 +139,7 @@ Price on its own barely predicts cancellation (r = −0.03 City, 0.10 Resort).
 
 
 
-🤖 Predictive Model: Multiple Linear Regression (ADR)
+## 🤖 Predictive Model: Multiple Linear Regression (ADR)
 
 The data is bookings that were actually stayed, with duplicates removed (60,795 rows), split 75/25 into training and test sets with random_state=42. Text columns were converted to numbers with .map() dictionaries.
 
@@ -150,7 +150,7 @@ The data is bookings that were actually stayed, with duplicates removed (60,795 
 | C1. Multiple LR (City Hotel only)	 | 0.462	 |29.19 |
 | C2. Multiple LR (Resort Hotel only)	| 0.718 |	31.54 |
 
-Main price drivers (model B coefficients):
+## Main price drivers (model B coefficients):
 
 | Feature |	Effect on ADR |
 | :--- | :--- |
@@ -162,43 +162,25 @@ Main price drivers (model B coefficients):
 | Each later year	| +14.5 |
 
 
-💡 Recommendations
-a. Audit Non-Refund and agency block bookings. Check deposits are collected, and record released blocks separately from guest cancellations.
-b.Tighten group contracts with release dates, attrition clauses and staged deposits.
-c. Apply the risk rules to every new booking. Ask High-risk bookings for a deposit and send reminders.
-d. Use controlled overbooking at the City Hotel in its peak months (April – June).
-e. Re-confirm long lead-time bookings (90+ days ahead).
-f. Grow direct and repeat business with loyalty perks and a best-rate guarantee.
-g. Encourage special requests at booking. Engaged guests rarely cancel.
-h. Pricing: keep the Resort's summer premium, use demand-based pricing at the City Hotel, and use the model to check quoted rates.
-
-🗂️ Repository Structure
-├── Hotel_Booking_Analysis.ipynb     # Main notebook (all outputs saved)
-├── Hotel_Booking_Analysis.html      # Notebook as a web page
-├── Hotel_Booking_Dashboard.html     # Interactive plotly dashboard
-├── requirements.txt
-├── README.md
-└── data/
-    ├── raw/
-    │   ├── Bookings.csv             # Fact table (119,390 rows)
-    │   ├── Hotels.csv
-    │   ├── Market_Segments.csv
-    │   ├── Customer_Types.csv
-    │   ├── Reservation_Status.csv
-    │   └── Data_Dictionary.docx
-    └── processed/
-        ├── hotel_bookings_clean.csv # Created by the notebook
-        └── model_results.csv        # Created by the notebook
+| 💡 Recommendations |
+| :--- |
+| a. Audit Non-Refund and agency block bookings. Check deposits are collected, and record released blocks separately from guest cancellations. |
+| b.Tighten group contracts with release dates, attrition clauses and staged deposits.|
+| c. Apply the risk rules to every new booking. Ask High-risk bookings for a deposit and send reminders. |
+| d. Use controlled overbooking at the City Hotel in its peak months (April – June). |
+| e. Re-confirm long lead-time bookings (90+ days ahead).|
+| f. Grow direct and repeat business with loyalty perks and a best-rate guarantee.|
+| g. Encourage special requests at booking. Engaged guests rarely cancel. |
+| h. Pricing: keep the Resort's summer premium, use demand-based pricing at the City Hotel, and use the model to check quoted rates. |
 
 Data model
 
 Bookings is the fact table. It joins to four lookup tables with left joins:
 
-Hotels ──(Hotel_ID)──┐
-Market_Segments ─────┼── Bookings ──┬── Customer_Types
-                     │              └── Reservation_Status
+<img width="864" height="246" alt="image" src="https://github.com/user-attachments/assets/63263c73-56cd-40d9-a41f-c1c8a278d616" />
+
                     
-🧹 Data Preparation Summary 
+## 🧹 Data Preparation Summary 
 | Issue |	Rows | Action |
 | :--- | :--- | :--- |
 | Missing children / country |	4 / 488 |	Filled with 0 / "Unknown" |
