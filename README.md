@@ -9,7 +9,9 @@
 
 </p>
 
-This repository contains a transactional dataset capturing the bookings received and bookings cancellation for 2 Hotels - a City Hotel & a Resort Hotel. An end-to-end data analytics project on 119,390 hotel bookings (City Hotel and Resort Hotel, July 2015 – August 2017). It measures how much cancellations cost, finds the bookings, channels and guests most likely to cancel, analyses pricing and demand, and builds a Multiple Linear Regression model to predict the room price (ADR).
+This repository contains a transactional dataset capturing the bookings received and bookings cancellation for 2 Hotels - a City Hotel & a Resort Hotel.  
+An end-to-end data analytics project on 119,390 hotel bookings (City Hotel and Resort Hotel, July 2015 – August 2017).   
+It measures how much cancellations cost, finds the bookings, channels and guests most likely to cancel, analyses pricing and demand, and builds a Multiple Linear Regression model to predict the room price (ADR).
 
 
 ## 📋 Dataset Overview
@@ -30,11 +32,14 @@ More than a third of all bookings were cancelled. Cancellations leave rooms empt
 
 ##    Research Objectives
 
-1. Measure overall booking and cancellation performance. Measure booking volume, cancellation rate, ADR (average daily rate) and revenue lost to cancellations. Compare the City Hotel with the Resort Hotel, and look at changes by year, month and season.
-2. Find the booking factors linked to cancellations. Test how lead time, deposit type, previous cancellations, booking changes, special requests, waiting-list days and parking requests relate to whether a booking is canceled. Early data points to some strong signals. Non-refundable bookings are canceled 99% of the time, which suggests a data or process problem worth investigating. Group bookings are canceled 61% of the time.
-3. Evaluate market segments and distribution channels. Compare cancellation rates, ADR and revenue across segments such as Online TA, Offline TA/TO, Groups, Direct and Corporate. The goal is to show which channels bring in the most valuable and most reliable bookings.
-4. Profile customer types and guest behaviour. Compare customer types (Transient, Contract, Group, Transient-Party), repeat and first-time guests, meal plans, party makeup (adults, children, babies) and country of origin. This shows which guest profiles are most loyal and which carry the most risk.
-5. Analyse pricing and demand patterns. Look at how ADR changes by hotel, month, room demand and length of stay, and whether price level affects the chance of cancellation.
+1. Measure overall booking and cancellation performance. Measure booking volume, cancellation rate, ADR (average daily rate) and revenue lost to cancellations.
+   Compare the City Hotel with the Resort Hotel, and look at changes by year, month and season.
+2. Find the booking factors linked to cancellations. Test how lead time, deposit type, previous cancellations, booking changes, special requests, waiting-list days and parking requests relate to whether a booking is canceled. Early data points to some strong signals.  
+Non-refundable bookings are canceled 99% of the time, which suggests a data or process problem worth investigating. Group bookings are canceled 61% of the time.
+3. Evaluate market segments and distribution channels. Compare cancellation rates, ADR and revenue across segments such as Online TA, Offline TA/TO, Groups, Direct and Corporate.
+4. The goal is to show which channels bring in the most valuable and most reliable bookings.
+5. Profile customer types and guest behaviour. Compare customer types (Transient, Contract, Group, Transient-Party), repeat and first-time guests, meal plans, party makeup (adults, children, babies) and country of origin. This shows which guest profiles are most loyal and which carry the most risk.
+6. Analyse pricing and demand patterns. Look at how ADR changes by hotel, month, room demand and length of stay, and whether price level affects the chance of cancellation.
    
 ## 🗂️ Data Dictionary
 
