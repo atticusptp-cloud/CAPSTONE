@@ -27,7 +27,8 @@ https://raw.githubusercontent.com/atticusptp-cloud/CAPSTONE/refs/heads/main/caps
 
 ## Problem Statement
 
-More than a third of all bookings were cancelled. Cancellations leave rooms empty at short notice and cost revenue on the hotels expected to earn. Management wants to know the severity of the issue, which bookings are most at risk, which channels and guests are most reliable, and how room prices move with seasonality and demand.
+More than one-third of bookings are cancelled, costing an estimated 16.7M in lost room revenue.  
+This project measures the impact, identifies the bookings, channels and guests most at risk, and examines how prices move with seasonality and demands, so the hotels can reduce bookings cancellations and protect revenue.
 
 
 ##    Research Objectives
