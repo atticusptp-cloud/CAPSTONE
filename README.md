@@ -97,14 +97,11 @@ Comparing January – August, 2017 had 11% more bookings and a 15% higher ADR th
 ## 2. Cancellation factors
 
   Cancellation rises steadily with lead time, from 9.7% for bookings made 0 – 7 days ahead to 67.7% for 365+ days.  
-  
   Non-Refund bookings cancel 99.4% of the time.   
-  
   The investigation found that 97% come from Portugal, 97% come through Groups or Offline travel agents, and 93% are duplicate rows.  
-  
-  This points to agency block bookings being released, not real guests cancelling.
-  Guests with special requests or booking changes cancel much less (14 – 22% vs 41 – 48%).
-  A simple rule-based risk score (if / elif) separates the bookings well:
+  This points to agency block bookings being released, not real guests cancelling.  
+  Guests with special requests or booking changes cancel much less (14 – 22% vs 41 – 48%).  
+  A simple rule-based risk score (if / elif) separates the bookings well:  
 
 | Risk level | Share of bookings |	Actual cancellation rate |
 | :--- | :--- | :--- |
