@@ -146,27 +146,13 @@ Price on its own barely predicts cancellation (r = −0.03 City, 0.10 Resort).
 
 
 
-## 🤖 Predictive Model: Multiple Linear Regression (ADR)
+## 🤖 Predictive Model: 
 
-The data is bookings that were actually stayed, with duplicates removed (60,795 rows), split 75/25 into training and test sets with random_state=42. Text columns were converted to numbers with .map() dictionaries.
+<img width="626" height="620" alt="image" src="https://github.com/user-attachments/assets/8a19c002-4f61-4ec5-a516-b3af6aa34177" />
 
-| Model |	R² |	RMSE |
-| :--- | :--- | :--- |
-| A. Simple LR (July/August only) |	0.170 |	45.15 |
-| B. Multiple LR (both hotels)	| 0.498 |	35.12 |
-| C1. Multiple LR (City Hotel only)	 | 0.462	 |29.19 |
-| C2. Multiple LR (Resort Hotel only)	| 0.718 |	31.54 |
+<img width="674" height="334" alt="image" src="https://github.com/user-attachments/assets/db765ecf-c003-401e-9de6-a26459ecf81c" />
 
-## Main price drivers (model B coefficients):
-
-| Feature |	Effect on ADR |
-| :--- | :--- |
-| Half or full board |	+33 |
-| Each child |	+27 |
-| Summer arrival |	+23 |
-| Online TA / Direct booking |	+22 |
-| Each adult |	+19 |
-| Each later year	| +14.5 |
+Random Forest is the best model, with a test ROC-AUC of 0.892
 
 ## Data model
 
