@@ -37,10 +37,9 @@ This project measures the impact, identifies the bookings, channels and guests m
    Compare the City Hotel with the Resort Hotel, and look at changes by year, month and season.
 2. Find the booking factors linked to cancellations. Test how lead time, deposit type, previous cancellations, booking changes, special requests, waiting-list days and parking requests relate to whether a booking is canceled. Early data points to some strong signals.  
 Non-refundable bookings are canceled 99% of the time, which suggests a data or process problem worth investigating. Group bookings are canceled 61% of the time.
-3. Evaluate market segments and distribution channels. Compare cancellation rates, ADR and revenue across segments such as Online TA, Offline TA/TO, Groups, Direct and Corporate.
-4. The goal is to show which channels bring in the most valuable and most reliable bookings.
-5. Profile customer types and guest behaviour. Compare customer types (Transient, Contract, Group, Transient-Party), repeat and first-time guests, meal plans, party makeup (adults, children, babies) and country of origin. This shows which guest profiles are most loyal and which carry the most risk.
-6. Analyse pricing and demand patterns. Look at how ADR changes by hotel, month, room demand and length of stay, and whether price level affects the chance of cancellation.
+3. Evaluate market segments and distribution channels. Compare cancellation rates, ADR and revenue across segments such as Online TA, Offline TA/TO, Groups, Direct and Corporate.The goal is to show which channels bring in the most valuable and most reliable bookings.
+4. Profile customer types and guest behaviour. Compare customer types (Transient, Contract, Group, Transient-Party), repeat and first-time guests, meal plans, party makeup (adults, children, babies) and country of origin. This shows which guest profiles are most loyal and which carry the most risk.
+5. Analyse pricing and demand patterns. Look at how ADR changes by hotel, month, room demand and length of stay, and whether price level affects the chance of cancellation.
    
 ## 🗂️ Data Dictionary
 
@@ -85,22 +84,23 @@ The dataset consists of the following 28 features:
 | :--- | :--- |
 | Bookings (after cleaning)	| 118,561 |
 | Cancellation rate | 37.3% |
-| Average daily rate (ADR)	|        102.48 |
-| Realised revenue | 26.0M |
-|  Revenue lost to cancellations |	    16.7M (39% of booked value)|
+| Average daily rate (ADR)	|        $102.48 |
+| Realised revenue | $26.0M |
+|  Revenue lost to cancellations |	    $16.7M (39% of booked value)|
 
 
 
 ## Insights by objective
 
-## 1. Performance
+## Objective 1: Overall booking and cancellation performance<img width="653" height="53" alt="image" src="https://github.com/user-attachments/assets/37fed3fb-b9b4-4bd0-9277-ca48b5a6adb5" />
+
 
 The City Hotel cancels 41.9% of bookings and the Resort 28.0%. The City Hotel accounts for 10.9M of the 16.7M lost.
 Comparing January – August, 2017 had 11% more bookings and a 15% higher ADR than 2016, but cancellations also rose, from 34.9% to 38.8%.
 <img width="1308" height="742" alt="image" src="https://github.com/user-attachments/assets/b3392810-efbb-47be-a717-9d67262a2d59" />
 
 
-## 2. Cancellation factors
+## Objective 2: Booking factors linked to cancellations
 
   Cancellation rises steadily with lead time, from 9.7% for bookings made 0 – 7 days ahead to 67.7% for 365+ days.  
   Non-Refund bookings cancel 99.4% of the time.   
@@ -121,20 +121,22 @@ Comparing January – August, 2017 had 11% more bookings and a 15% higher ADR th
 <img width="1308" height="740" alt="image" src="https://github.com/user-attachments/assets/8e929846-b921-4fbc-9e93-55fb21ce057a" />
 
 
-## 3. Segments and channels
+## Objective 3: Market segments and distribution channels
+
 
 Online TA brings 53% of realised revenue (ADR ~118) but cancels 36.9% of the time.
 Direct is the best segment: ADR ~117 with only 15.5% cancellation. Groups cancel 61.2% of the time.
 <img width="1310" height="738" alt="image" src="https://github.com/user-attachments/assets/dae2b7be-86d5-43d5-a974-e0a845e4f1c6" />
 
-## 4. Guests
+## Objective 4: Customer types and guest behaviour
+
 
 Repeat guests cancel 15.7% vs 37.9% for first-time guests, but they make up only ~3% of bookings.
 Transient guests are 75% of bookings and cancel 41%. Bookings from Portugal cancel 57.3%.
 <img width="1310" height="740" alt="image" src="https://github.com/user-attachments/assets/dca8f197-82d0-4687-a1cc-78609aec0953" />
 
 
-## 5. Pricing and demand
+## Objective 5: Pricing and demand patterns
 
 The Resort's ADR rises from ~50 in January to ~183 in August, a seasonal premium.
 City Hotel prices follow monthly demand closely (r = 0.80); the Resort's follow it only weakly (r = 0.29).
